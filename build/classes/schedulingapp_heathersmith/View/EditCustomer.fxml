@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="444.0" prefWidth="548.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="schedulingapp_heathersmith.View.EditCustomerController">
+   <children>
+      <Button fx:id="saveButton" layoutX="330.0" layoutY="384.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="51.0" text="Save" />
+      <Button fx:id="cancelButton" layoutX="442.0" layoutY="384.0" mnemonicParsing="false" text="Cancel" />
+      <Label fx:id="editCustomerLabel" layoutX="34.0" layoutY="32.0" text="Edit Customer" />
+      <Label fx:id="custNameLabel" layoutX="250.0" layoutY="76.0" text="Customer Name" />
+      <Label fx:id="addressLabel" layoutX="287.0" layoutY="121.0" text="Address" />
+      <Label fx:id="cityLabel" layoutX="308.0" layoutY="203.0" text="City" />
+      <TextField fx:id="custNameTextBox" layoutX="345.0" layoutY="72.0" />
+      <TextField fx:id="addressTextBox" layoutX="345.0" layoutY="117.0" />
+      <TableView fx:id="custTable" layoutX="11.0" layoutY="69.0" prefHeight="295.0" prefWidth="200.0">
+        <columns>
+          <TableColumn fx:id="custIdCol" prefWidth="99.33334636688232" text="Id" />
+          <TableColumn fx:id="custNameCol" prefWidth="99.33333587646484" text="Name" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="cityCombo" layoutX="344.0" layoutY="199.0" prefWidth="150.0" />
+      <TextField fx:id="address2TextBox" layoutX="345.0" layoutY="156.0" />
+      <Label fx:id="address2Label" layoutX="277.0" layoutY="160.0" text="Address 2" />
+      <Label fx:id="postalLabel" layoutX="302.0" layoutY="241.0" text="Postal" />
+      <Label fx:id="contactLabel" layoutX="297.0" layoutY="286.0" text="Contact" />
+      <TextField fx:id="postalTextBox" layoutX="345.0" layoutY="237.0" />
+      <TextField fx:id="contactTextBox" layoutX="345.0" layoutY="282.0" />
+      <Button fx:id="selectButton" layoutX="47.0" layoutY="384.0" mnemonicParsing="false" onAction="#selectButtonClicked" text="Select" />
+      <Button fx:id="deleteButton" layoutX="144.0" layoutY="384.0" mnemonicParsing="false" text="Delete" />
+      <ComboBox fx:id="activeCombo" layoutX="343.0" layoutY="328.0" prefWidth="150.0" />
+      <Label fx:id="activeLabel" layoutX="303.0" layoutY="332.0" text="Active" />
+      <Label fx:id="validateLabel" layoutX="243.0" layoutY="40.0" prefHeight="17.0" prefWidth="251.0" />
+   </children>
+</AnchorPane>
